@@ -1,0 +1,13 @@
+{
+  "name": "language-mheg-plus",
+  "main": "./lib/language-mheg-plus",
+  "version": "0.0.0",
+  "description": "MHEG+ language support in Atom",
+  "repository": "https://github.com/atom/language-mheg-plus",
+  "license": "MIT",
+  "engines": {
+    "atom": "*"
+  },
+  "dependencies": {
+  }
+}
