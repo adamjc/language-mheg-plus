@@ -1,3 +1,47 @@
 # put all of the mheg plus grammar stuff here, look @
 # https://github.com/atom/language-coffee-script/blob/master/grammars/coffeescript.cson
 # for an example.
+
+'scopeName': 'source.mheg+'
+'name': 'MHEG+'
+'fileTypes': [
+    'mheg+'
+]
+'patterns': [
+    {
+        'name': 'keyword.control.source.mheg+'
+        'match': '\\b(foreach|endFor|import|defSequential|endSequential|defMacro|endMacro|insertMacro|:If|:InitiallyActive|:EventSource|:EventType|:EventData|:Shared|:LinkEffect|:OrigValue|:IndirectRef)\\b'
+    }
+    {
+        'name': 'keyword.control.source.mheg+'
+        'match': '(:SetVariable|:SetData|:NewRefContent|:ActionSlots|:TokenGroupItems|:TokenGroup|:OnCloseDown|:SceneCS|:InputEventReg|:Items|:Scene|:Timer|:CHook|:OrigRefFillColour|:OrigRefLineColour|:TextWrapping|:VJustification|:HJustification|:NameSpace|:If|:Else|:InitiallyActive|:EventSource|:EventType|:EventData|:Shared|:LinkEffect|:OrigValue|:OrigBoxSize|:OrigPosition|:OrigContent|:ResidentPrg|:Name|:TestVariable|:DoNothing|:TextCHook|:BitmapCHook|:FontAttributes|:BackgroundColour|:TextColour)'
+    }
+    {
+        'name': 'variable.mheg+'
+        'match': '(:Rectangle|:Bitmap|:ConstValue|:Alias|:OctetStringConst|:IntegerConst|:GOctetString|:BooleanVar|:OStringVar|:Link|:ContentRefVar|:ObjectRefVar|:IndirectRef|:Text|:IntegerVar)'
+    }
+    {
+        'name': 'entity.name.function.mheg+'
+        'match': '(\\.GetTextData|\\.SetTimer|\\.SetData|\\.CallActionSlot|\\.SetPosition|\\.Modulo|\\.Run|\\.Add|\\.Stop|\\.Activate|\\.SetVariable|\\.Deactivate|\\.Call|\\.Append)'
+    }
+    {
+        'name': 'constant.other.color.mheg+'
+        'match': '\\b(True|False)\\b'
+    }
+    {
+        'name': 'constant.numeric.mheg+'
+        'match': '\\b[0-9]+\\b'
+    }
+    {
+        'name': 'string.mheg+'
+        'match': '(\".*\"|\'.*\')'
+    }
+    {
+        'name': 'entity.name.class.mheg+'
+        'match': 'app#[^\.]*'
+    }
+    {
+        'name': 'comment.mheg+'
+        'match': '\\/\\/.*'
+    }
+]

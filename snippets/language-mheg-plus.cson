@@ -1,2 +1,10 @@
-'source.mheg+':
-    # TODO
+'.source.mheg\\+':
+    'defMacro':
+        'prefix': ':d'
+        'body': 'defMacro ${1:macroName} {\n\t$2\n} endMacro'
+    'insertMacro':
+        'prefix': ':im'
+        'body': 'insertMacro(${1:macroName})'
+    'defSequential':
+        'prefix': ':ds'
+        'body': 'defSequential ${1:sequentialName} :NameSpace ${2:nameSpace} {\n\t${3}\n} endSequential'

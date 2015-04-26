@@ -1,7 +1,7 @@
 # here we describe how the editor looks for indentations.
 
-'.source.mheg+',:
+'.source.mheg+':
     'editor':
-        'commentStart': '', # TODO:
-        'increaseIndentPattern': '', # TODO
-        'decreaseIndentPattern': '' # TODO
+        'commentStart': ''
+        'increaseIndentPattern': ''
+        'decreaseIndentPattern': ''
