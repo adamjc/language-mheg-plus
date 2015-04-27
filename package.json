@@ -7,7 +7,5 @@
   "license": "MIT",
   "engines": {
     "atom": "*"
-  },
-  "dependencies": {
   }
 }
