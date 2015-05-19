@@ -44,7 +44,7 @@
     }
     {
         'name': 'constant.numeric.mheg+'
-        'match': '\\b[0-9]+\\b'
+        'match': '\-?\\b[0-9]+\\b'
     }
     {
         'name': 'string.mheg+'
