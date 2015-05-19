@@ -21,11 +21,17 @@
         'match': '(:Rectangle|:Bitmap|:ConstValue|:Alias|:OctetStringConst|:IntegerConst|:GOctetString|:BooleanVar|:OStringVar|:Link|:ContentRefVar|:ObjectRefVar|:IndirectRef|:Text|:IntegerVar)'
     }
     {
+        'name': 'entity.name.class.mheg+'
+        'match': 'app(?=#)'
+    }
+    {
         'captures':
             '1':
+                'name': 'entity.name.class.mheg+'
+            '3':
                 'name': 'entity.name.function.mheg+'
-        'comment': 'a->GetTextData() and a.GetTextData()'        
-        'match': '(?:.*\\.|\\-\\>)(GetTextData|SetTimer|SetData|CallActionSlot|SetPosition|Modulo|Run|Add|Stop|Activate|SetVariable|Deactivate|Call|Append(?=\\())'
+        'comment': 'a->GetTextData() and a.GetTextData()'
+        'match': '(\\s*app)?(?:.*(\\.|\\-\\>))(GetTextData|SetTimer|SetData|CallActionSlot|SetPosition|Modulo|Run|Add|Stop|Activate|SetVariable|Deactivate|Call|Append)'
     }
     {
         'name': 'constant.other.color.mheg+'
@@ -38,10 +44,6 @@
     {
         'name': 'string.mheg+'
         'match': '(\".*\"|\'.*\')'
-    }
-    {
-        'name': 'entity.name.class.mheg+'
-        'match': 'app#[^\.]*'
     }
     {
         'name': 'comment.mheg+'
