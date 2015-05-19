@@ -10,15 +10,19 @@
 'patterns': [
     {
         'name': 'keyword.control.source.mheg+'
-        'match': '(foreach|endFor|import|defSequential|endSequential|defMacro|endMacro|insertMacro|insertOptionalMacro|:If|:Else|:InitiallyActive|:EventSource|:EventType|:EventData|:Shared|:LinkEffect|:OrigValue|:IndirectRef)'
+        'match': '(foreach|endFor|import|defSequential|endSequential|defMacro|endMacro|insertMacro|insertOptionalMacro|:If|:Else)'
     }
     {
-        'name': 'support.variable.source.mheg+'
-        'match': '(:SetVariable|:SetData|:NewRefContent|:ActionSlots|:TokenGroupItems|:TokenGroup|:OnCloseDown|:SceneCS|:InputEventReg|:Items|:Scene|:Timer|:CHook|:OrigRefFillColour|:OrigRefLineColour|:TextWrapping|:VJustification|:HJustification|:NameSpace|:InitiallyActive|:EventSource|:EventType|:EventData|:Shared|:LinkEffect|:OrigValue|:OrigBoxSize|:OrigPosition|:OrigContent|:ResidentPrg|:Name|:TestVariable|:DoNothing|:TextCHook|:BitmapCHook|:FontAttributes|:BackgroundColour|:TextColour)'
+        'name': 'variable.parameter.mheg+'
+        'match': '(:BBBox|:EventSource|:EventType|:EventData|:Shared|:LinkEffect|:OrigValue|:IndirectRef|:InitiallyActive|:ContentRefVar|:IndirectRef|:OrigLineWidth|:InitiallyActive|:SetVariable|:SetData|:NewRefContent|:ActionSlots|:TokenGroupItems|:TokenGroup|:OnCloseDown|:SceneCS|:InputEventReg|:Items|:Scene|:Timer|:CHook|:OrigRefFillColour|:OrigRefLineColour|:TextWrapping|:VJustification|:HJustification|:NameSpace|:EventSource|:EventType|:EventData|:Shared|:LinkEffect|:OrigValue|:OrigBoxSize|:OrigPosition|:OrigContent|:ResidentPrg|:Name|:TestVariable|:DoNothing|:TextCHook|:BitmapCHook|:FontAttributes|:BackgroundColour|:TextColour)'
+    }
+    {
+        'name': 'support.type.mheg+'
+        'match': '(:ContentRef)'
     }
     {
         'name': 'variable.mheg+'
-        'match': '(:Rectangle|:Bitmap|:ConstValue|:Alias|:OctetStringConst|:IntegerConst|:GOctetString|:BooleanVar|:OStringVar|:Link|:ContentRefVar|:ObjectRefVar|:IndirectRef|:Text|:IntegerVar)'
+        'match': '(:ObjectRefVar|:Rectangle|:Bitmap|:ConstValue|:Alias|:OctetStringConst|:IntegerConst|:GOctetString|:BooleanVar|:OStringVar|:Link|:Text|:IntegerVar)'
     }
     {
         'name': 'entity.name.class.mheg+'
