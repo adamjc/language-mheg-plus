@@ -8,3 +8,6 @@
     'defSequential':
         'prefix': ':ds'
         'body': 'defSequential ${1:sequentialName} :NameSpace ${2:nameSpace} {\n\t${3}\n} endSequential'
+    'if':
+        'prefix': ':if'
+        'body': ':If (${1:condition}) {\n\t${2}\n}'

@@ -10,11 +10,11 @@
 'patterns': [
     {
         'name': 'keyword.control.source.mheg+'
-        'match': '\\b(foreach|endFor|import|defSequential|endSequential|defMacro|endMacro|insertMacro|:If|:InitiallyActive|:EventSource|:EventType|:EventData|:Shared|:LinkEffect|:OrigValue|:IndirectRef)\\b'
+        'match': '(foreach|endFor|import|defSequential|endSequential|defMacro|endMacro|insertMacro|insertOptionalMacro|:If|:Else|:InitiallyActive|:EventSource|:EventType|:EventData|:Shared|:LinkEffect|:OrigValue|:IndirectRef)'
     }
     {
-        'name': 'keyword.control.source.mheg+'
-        'match': '(:SetVariable|:SetData|:NewRefContent|:ActionSlots|:TokenGroupItems|:TokenGroup|:OnCloseDown|:SceneCS|:InputEventReg|:Items|:Scene|:Timer|:CHook|:OrigRefFillColour|:OrigRefLineColour|:TextWrapping|:VJustification|:HJustification|:NameSpace|:If|:Else|:InitiallyActive|:EventSource|:EventType|:EventData|:Shared|:LinkEffect|:OrigValue|:OrigBoxSize|:OrigPosition|:OrigContent|:ResidentPrg|:Name|:TestVariable|:DoNothing|:TextCHook|:BitmapCHook|:FontAttributes|:BackgroundColour|:TextColour)'
+        'name': 'support.variable.source.mheg+'
+        'match': '(:SetVariable|:SetData|:NewRefContent|:ActionSlots|:TokenGroupItems|:TokenGroup|:OnCloseDown|:SceneCS|:InputEventReg|:Items|:Scene|:Timer|:CHook|:OrigRefFillColour|:OrigRefLineColour|:TextWrapping|:VJustification|:HJustification|:NameSpace|:InitiallyActive|:EventSource|:EventType|:EventData|:Shared|:LinkEffect|:OrigValue|:OrigBoxSize|:OrigPosition|:OrigContent|:ResidentPrg|:Name|:TestVariable|:DoNothing|:TextCHook|:BitmapCHook|:FontAttributes|:BackgroundColour|:TextColour)'
     }
     {
         'name': 'variable.mheg+'
@@ -23,12 +23,14 @@
     {
         'captures':
             '1':
-                'name': 'entity.name.function.mheg+'
-        'comment': 'a->GetTextData() and a.GetTextData()'        
-        'match': '(?:.*\\.|\\-\\>)(GetTextData|SetTimer|SetData|CallActionSlot|SetPosition|Modulo|Run|Add|Stop|Activate|SetVariable|Deactivate|Call|Append(?=\\())'
+                'name': 'entity.name.class.mheg+'
+            '3':
+                'name': 'support.function.mheg+'
+        'comment': 'a->GetTextData() and a.GetTextData()'
+        'match': '(\\s*app)?(?:.*(\\.|\\-\\>))(Multiply|Divide|SetSpeed|SetBoxSize|GetTextData|SetTimer|SetData|CallActionSlot|SetPosition|Modulo|Run|Add|Stop|Activate|SetVariable|Deactivate|Call|Append)'
     }
     {
-        'name': 'constant.other.color.mheg+'
+        'name': 'keyword.other.mheg+'
         'match': '\\b(True|False)\\b'
     }
     {
