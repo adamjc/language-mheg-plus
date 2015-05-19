@@ -21,8 +21,11 @@
         'match': '(:Rectangle|:Bitmap|:ConstValue|:Alias|:OctetStringConst|:IntegerConst|:GOctetString|:BooleanVar|:OStringVar|:Link|:ContentRefVar|:ObjectRefVar|:IndirectRef|:Text|:IntegerVar)'
     }
     {
-        'name': 'entity.name.function.mheg+'
-        'match': '(\\.GetTextData|\\.SetTimer|\\.SetData|\\.CallActionSlot|\\.SetPosition|\\.Modulo|\\.Run|\\.Add|\\.Stop|\\.Activate|\\.SetVariable|\\.Deactivate|\\.Call|\\.Append)'
+        'captures':
+            '1':
+                'name': 'entity.name.function.mheg+'
+        'comment': 'a->GetTextData() and a.GetTextData()'        
+        'match': '(?:.*\\.|\\-\\>)(GetTextData|SetTimer|SetData|CallActionSlot|SetPosition|Modulo|Run|Add|Stop|Activate|SetVariable|Deactivate|Call|Append(?=\\())'
     }
     {
         'name': 'constant.other.color.mheg+'
