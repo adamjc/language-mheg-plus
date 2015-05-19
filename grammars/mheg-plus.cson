@@ -21,6 +21,10 @@
         'match': '(:Rectangle|:Bitmap|:ConstValue|:Alias|:OctetStringConst|:IntegerConst|:GOctetString|:BooleanVar|:OStringVar|:Link|:ContentRefVar|:ObjectRefVar|:IndirectRef|:Text|:IntegerVar)'
     }
     {
+        'name': 'entity.name.class.mheg+'
+        'match': 'app(?=#)'
+    }
+    {
         'captures':
             '1':
                 'name': 'entity.name.class.mheg+'
@@ -28,6 +32,7 @@
                 'name': 'support.function.mheg+'
         'comment': 'a->GetTextData() and a.GetTextData()'
         'match': '(\\s*app)?(?:.*(\\.|\\-\\>))(Multiply|Divide|SetSpeed|SetBoxSize|GetTextData|SetTimer|SetData|CallActionSlot|SetPosition|Modulo|Run|Add|Stop|Activate|SetVariable|Deactivate|Call|Append)'
+
     }
     {
         'name': 'keyword.other.mheg+'
@@ -40,10 +45,6 @@
     {
         'name': 'string.mheg+'
         'match': '(\".*\"|\'.*\')'
-    }
-    {
-        'name': 'entity.name.class.mheg+'
-        'match': 'app#[^\.]*'
     }
     {
         'name': 'comment.mheg+'
