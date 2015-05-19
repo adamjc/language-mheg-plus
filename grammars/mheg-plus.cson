@@ -31,7 +31,7 @@
             '3':
                 'name': 'entity.name.function.mheg+'
         'comment': 'a->GetTextData() and a.GetTextData()'
-        'match': '(\\s*app)?(?:.*(\\.|\\-\\>))(GetTextData|SetTimer|SetData|CallActionSlot|SetPosition|Modulo|Run|Add|Stop|Activate|SetVariable|Deactivate|Call|Append)'
+        'match': '(\\s*app#)?(?:.*(\\.|\\-\\>))(GetTextData|SetTimer|SetData|CallActionSlot|SetPosition|Modulo|Run|Add|Stop|Activate|SetVariable|Deactivate|Call|Append)'
     }
     {
         'name': 'constant.other.color.mheg+'
