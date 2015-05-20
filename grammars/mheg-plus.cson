@@ -35,7 +35,7 @@
             '3':
                 'name': 'support.function.mheg+'
         'comment': 'a->GetTextData() and a.GetTextData()'
-        'match': '(\\s*app)?(?:.*(\\.|\\-\\>))(Subtract|Multiply|Divide|SetSpeed|SetBoxSize|GetTextData|SetTimer|SetData|CallActionSlot|SetPosition|Modulo|Run|Add|Stop|Activate|SetVariable|Deactivate|Call|Append)'
+        'match': '(\\s*app)?(?:.*(\\.|\\-\\>))(BringToFront|Subtract|Multiply|Divide|SetSpeed|SetBoxSize|GetTextData|SetTimer|SetData|CallActionSlot|SetPosition|Modulo|Run|Add|Stop|Activate|SetVariable|Deactivate|Call|Append)'
 
     }
     {
