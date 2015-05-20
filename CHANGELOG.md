@@ -1,4 +1,7 @@
-## 0.2.0 - Many bugfixes
+## 0.3.1 - Corrected Changelog.
+* Oops.
+
+## 0.3.0 - Many bugfixes
 * Fixed app# regex
 * Now highlights negative numbers and x..y digits
 * Added many new functions
