@@ -10,7 +10,7 @@
 'patterns': [
     {
         'name': 'keyword.control.source.mheg+'
-        'match': '(insertSequentials|pragma|foreach|endFor|import|defSequential|endSequential|defMacro|endMacro|insertMacro|insertOptionalMacro|:If|:Else|:TransitionTo)'
+        'match': '(insertSequentials|insertConditionalMacro|pragma|foreach|endFor|import|defSequential|endSequential|defMacro|endMacro|insertMacro|insertOptionalMacro|:If|:Else|:TransitionTo)'
     }
     {
         'name': 'variable.parameter.mheg+'
@@ -22,7 +22,7 @@
     }
     {
         'name': 'variable.mheg+'
-        'match': '(:(?:OStringConst|Multiplex|Audio|Video|Stream|ObjectRefVar|Rectangle|Bitmap|ConstValue|Alias|OctetStringConst|IntegerConst|GOctetString|BooleanVar|OStringVar|Link|Text|IntegerVar))'
+        'match': '(:(?:Application|Font|OStringConst|Multiplex|Audio|Video|Stream|ObjectRefVar|Rectangle|Bitmap|ConstValue|Alias|OctetStringConst|IntegerConst|GOctetString|BooleanVar|OStringVar|Link|Text|IntegerVar))'
     }
     {
         'name': 'entity.name.class.mheg+'
