@@ -1,3 +1,7 @@
+## 0.3.2 - Added new grammars
+* Functions: SetTextColour, BringtoFront, GetRunningStatus, GetTextContent
+* Variables: ObjectRef
+
 ## 0.3.1 - Corrected Changelog.
 * Oops.
 
