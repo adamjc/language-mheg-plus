@@ -14,7 +14,7 @@
     }
     {
         'name': 'variable.parameter.mheg+'
-        'match': '(:(?:ComponentTag|Conditional|GObjectRef|BBBox|EventSource|EventType|EventData|Shared|LinkEffect|OrigValue|IndirectRef|InitiallyActive|ContentRefVar|IndirectRef|OrigLineWidth|InitiallyActive|SetVariable|SetData|NewRefContent|ActionSlots|TokenGroupItems|TokenGroup|OnCloseDown|SceneCS|InputEventReg|Items|Scene|Timer|CHook|OrigRefFillColour|OrigRefLineColour|TextWrapping|VJustification|HJustification|NameSpace|EventSource|EventType|EventData|Shared|LinkEffect|OrigValue|OrigBoxSize|OrigPosition|OrigContent|ResidentPrg|Name|TestVariable|DoNothing|TextCHook|BitmapCHook|FontAttributes|BackgroundColour|TextColour))'
+        'match': '(:(?:ObjectRef|ComponentTag|Conditional|GObjectRef|BBBox|EventSource|EventType|EventData|Shared|LinkEffect|OrigValue|IndirectRef|InitiallyActive|ContentRefVar|IndirectRef|OrigLineWidth|InitiallyActive|SetVariable|SetData|NewRefContent|ActionSlots|TokenGroupItems|TokenGroup|OnCloseDown|SceneCS|InputEventReg|Items|Scene|Timer|CHook|OrigRefFillColour|OrigRefLineColour|TextWrapping|VJustification|HJustification|NameSpace|EventSource|EventType|EventData|Shared|LinkEffect|OrigValue|OrigBoxSize|OrigPosition|OrigContent|ResidentPrg|Name|TestVariable|DoNothing|TextCHook|BitmapCHook|FontAttributes|BackgroundColour|TextColour))'
     }
     {
         'name': 'support.type.mheg+'
@@ -22,7 +22,7 @@
     }
     {
         'name': 'variable.mheg+'
-        'match': '(:(?:Application|Font|OStringConst|Multiplex|Audio|Video|Stream|ObjectRefVar|Rectangle|Bitmap|ConstValue|Alias|OctetStringConst|IntegerConst|GOctetString|BooleanVar|OStringVar|Link|Text|IntegerVar))'
+        'match': '(:(?:GInteger|SendEvent|StorePersistent|ReadPersistent|Application|Font|OStringConst|Multiplex|Audio|Video|Stream|ObjectRefVar|Rectangle|Bitmap|ConstValue|Alias|OctetStringConst|IntegerConst|GOctetString|BooleanVar|OStringVar|Link|Text|IntegerVar))'
     }
     {
         'name': 'entity.name.class.mheg+'
@@ -35,7 +35,7 @@
             '3':
                 'name': 'support.function.mheg+'
         'comment': 'a->GetTextData() and a.GetTextData()'
-        'match': '(\\s*app)?(?:.*(\\.|\\-\\>))(BringToFront|Subtract|Multiply|Divide|SetSpeed|SetBoxSize|GetTextData|SetTimer|SetData|CallActionSlot|SetPosition|Modulo|Run|Add|Stop|Activate|SetVariable|Deactivate|Call|Append)'
+        'match': '(\\s*app)?(?:.*(\\.|\\-\\>))(SetTextColour|BringtoFront|GetRunningStatus|GetTextContent|GetPosition|GetBoxSize|BringToFront|Subtract|Multiply|Divide|SetSpeed|SetBoxSize|GetTextData|SetTimer|SetData|CallActionSlot|SetPosition|Modulo|Run|Add|Stop|Activate|SetVariable|Deactivate|Call|Append)'
 
     }
     {
