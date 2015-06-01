@@ -13,16 +13,16 @@
         'match': '(insertSequentials|insertConditionalMacro|pragma|foreach|endFor|import|defSequential|endSequential|defMacro|endMacro|insertMacro|insertOptionalMacro|:If|:Else|:TransitionTo)'
     }
     {
+        'name': 'variable.mheg+'
+        'match': '(:(?:GInteger|SendEvent|StorePersistent|ReadPersistent|Application|Font|OStringConst|Multiplex|Audio|Video|Stream|ObjectRefVar|Rectangle|Bitmap|ConstValue|Alias|OctetStringConst|IntegerConst|GOctetString|BooleanVar|OStringVar|Link|Text|IntegerVar))'
+    }
+    {
         'name': 'variable.parameter.mheg+'
         'match': '(:(?:ObjectRef|ComponentTag|Conditional|GObjectRef|BBBox|EventSource|EventType|EventData|Shared|LinkEffect|OrigValue|IndirectRef|InitiallyActive|ContentRefVar|IndirectRef|OrigLineWidth|InitiallyActive|SetVariable|SetData|NewRefContent|ActionSlots|TokenGroupItems|TokenGroup|OnCloseDown|SceneCS|InputEventReg|Items|Scene|Timer|CHook|OrigRefFillColour|OrigRefLineColour|TextWrapping|VJustification|HJustification|NameSpace|EventSource|EventType|EventData|Shared|LinkEffect|OrigValue|OrigBoxSize|OrigPosition|OrigContent|ResidentPrg|Name|TestVariable|DoNothing|TextCHook|BitmapCHook|FontAttributes|BackgroundColour|TextColour))'
     }
     {
         'name': 'support.type.mheg+'
         'match': '(:(?:ContentRef))'
-    }
-    {
-        'name': 'variable.mheg+'
-        'match': '(:(?:GInteger|SendEvent|StorePersistent|ReadPersistent|Application|Font|OStringConst|Multiplex|Audio|Video|Stream|ObjectRefVar|Rectangle|Bitmap|ConstValue|Alias|OctetStringConst|IntegerConst|GOctetString|BooleanVar|OStringVar|Link|Text|IntegerVar))'
     }
     {
         'name': 'entity.name.class.mheg+'
