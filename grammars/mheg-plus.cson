@@ -14,15 +14,15 @@
     }
     {
         'name': 'variable.mheg+'
-        'match': '(:(?:GInteger|SendEvent|StorePersistent|ReadPersistent|Application|Font|OStringConst|Multiplex|Audio|Video|Stream|ObjectRefVar|Rectangle|Bitmap|ConstValue|Alias|OctetStringConst|IntegerConst|GOctetString|BooleanVar|OStringVar|Link|Text|IntegerVar))'
+        'match': '(:\\b(?:GInteger|SendEvent|StorePersistent|ReadPersistent|Application|Font|OStringConst|Multiplex|Audio|Video|Stream|ObjectRefVar|Rectangle|Bitmap|ConstValue|Alias|OctetStringConst|IntegerConst|GOctetString|BooleanVar|OStringVar|Link|Text|IntegerVar)\\b)'
     }
     {
         'name': 'variable.parameter.mheg+'
-        'match': '(:(?:ObjectRef|ComponentTag|Conditional|GObjectRef|BBBox|EventSource|EventType|EventData|Shared|LinkEffect|OrigValue|IndirectRef|InitiallyActive|ContentRefVar|IndirectRef|OrigLineWidth|InitiallyActive|SetVariable|SetData|NewRefContent|ActionSlots|TokenGroupItems|TokenGroup|OnCloseDown|SceneCS|InputEventReg|Items|Scene|Timer|CHook|OrigRefFillColour|OrigRefLineColour|TextWrapping|VJustification|HJustification|NameSpace|EventSource|EventType|EventData|Shared|LinkEffect|OrigValue|OrigBoxSize|OrigPosition|OrigContent|ResidentPrg|Name|TestVariable|DoNothing|TextCHook|BitmapCHook|FontAttributes|BackgroundColour|TextColour))'
+        'match': '(:\\b(?:ObjectRef|ComponentTag|Conditional|GObjectRef|BBBox|EventSource|EventType|EventData|Shared|LinkEffect|OrigValue|IndirectRef|InitiallyActive|ContentRefVar|IndirectRef|OrigLineWidth|InitiallyActive|SetVariable|SetData|NewRefContent|ActionSlots|TokenGroupItems|TokenGroup|OnCloseDown|SceneCS|InputEventReg|Items|Scene|Timer|CHook|OrigRefFillColour|OrigRefLineColour|TextWrapping|VJustification|HJustification|NameSpace|EventSource|EventType|EventData|Shared|LinkEffect|OrigValue|OrigBoxSize|OrigPosition|OrigContent|ResidentPrg|Name|TestVariable|DoNothing|TextCHook|BitmapCHook|FontAttributes|BackgroundColour|TextColour)\\b)'
     }
     {
         'name': 'support.type.mheg+'
-        'match': '(:(?:ContentRef))'
+        'match': '(:\\b(?:ContentRef)\\b)'
     }
     {
         'name': 'entity.name.class.mheg+'
@@ -31,11 +31,13 @@
     {
         'captures':
             '1':
+                'name': 'comment.mheg+'
+            '2':
                 'name': 'entity.name.class.mheg+'
-            '3':
+            '4':
                 'name': 'support.function.mheg+'
         'comment': 'a->GetTextData() and a.GetTextData()'
-        'match': '(\\s*app)?(?:.*(\\.|\\-\\>))(SetTextColour|BringtoFront|GetRunningStatus|GetTextContent|GetPosition|GetBoxSize|BringToFront|Subtract|Multiply|Divide|SetSpeed|SetBoxSize|GetTextData|SetTimer|SetData|CallActionSlot|SetPosition|Modulo|Run|Add|Stop|Activate|SetVariable|Deactivate|Call|Append)'
+        'match': '(\\s*//.*)|(?:(\\s*app)?(?:.*(\\.|\\-\\>))(SetTextColour|BringtoFront|GetRunningStatus|GetTextContent|GetPosition|GetBoxSize|BringToFront|Subtract|Multiply|Divide|SetSpeed|SetBoxSize|GetTextData|SetTimer|SetData|CallActionSlot|SetPosition|Modulo|Run|Add|Stop|Activate|SetVariable|Deactivate|Call|Append))'
 
     }
     {
